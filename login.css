@@ -8,9 +8,9 @@
 body {
   margin: 0;
   padding: 0;
-  /* image you can change  or 
-  you can use link blow
-  https://png.pngtree.com/thumb_back/fh260/background/20230423/pngtree-1080p-pink-cosmos-flowers-wallpaper-hd-hd-wallpapers-image_2486115.jpg */
+  /* Image you can change or
+     You can use the link below:
+     https://png.pngtree.com/thumb_back/fh260/background/20230423/pngtree-1080p-pink-cosmos-flowers-wallpaper-hd-hd-wallpapers-image_2486115.jpg */
   background-image: url("images/background_image.jpg");
   background-size: cover;
   background-position: center;
@@ -30,7 +30,7 @@ form {
   ); /* Darker and more transparent background */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 350px;
   display: flex;
@@ -38,7 +38,8 @@ form {
   justify-content: space-evenly;
   backdrop-filter: blur(3px); /* Apply blur effect to the background */
 }
-/* icone on password */
+
+/* Icon on password */
 .password-container {
   position: relative;
 }
@@ -81,8 +82,10 @@ textarea {
   resize: none;
   height: 100px;
 }
+
 /* Add this in your style.css file */
-input, textarea {
+input,
+textarea {
   border: 2px solid #3498db; /* Blue border */
   background-color: #f0f8ff; /* Light blue background */
   padding: 10px;
@@ -91,13 +94,13 @@ input, textarea {
   transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #fd7f00; /* Green border on focus */
   background-color: #7be684; /* Light green background on focus */
   outline: none;
   box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); /* Add focus shadow */
 }
-
 
 button {
   padding: 10px 20px;
