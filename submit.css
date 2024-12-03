@@ -7,7 +7,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #866767;
+  background-color: #bc7a7a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,4 +115,3 @@ body {
     transform: translateX(0) translateY(0);
   }
 }
-
