@@ -1,0 +1,100 @@
+/* Page styling */
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Title styling */
+.feedback-title {
+  font-size: 3rem;
+  animation: slideIn 2s ease-in-out;
+}
+
+/* Text styling */
+.feedback-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Countdown styling */
+#countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: zoomOut 2s infinite, rainbowColor 3s infinite;
+}
+
+/* Button styling */
+.feedback-btn {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.feedback-btn:hover {
+  background: #ff3e3e;
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(255, 63, 63, 0.5);
+}
+
+/* Keyframes for animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes rainbowColor {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  57% {
+    color: blue;
+  }
+  71% {
+    color: indigo;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}

@@ -1,0 +1,114 @@
+/* Apply box-sizing globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* image you can change  or 
+  you can use link blow 
+  https://png.pngtree.com/thumb_back/fh260/background/20230423/pngtree-1080p-pink-cosmos-flowers-wallpaper-hd-hd-wallpapers-image_2486115.jpg */
+  background-image: url("images/background_image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif; /* Darker font */
+}
+
+form {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Darker and more transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+  text-align: center;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  backdrop-filter: blur(3px); /* Apply blur effect to the background */
+}
+/* icone on password */
+.password-container {
+  position: relative;
+}
+
+#password {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #f1f1f1; /* Lighter text color for better readability */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+/* Add this in your style.css file */
+input, textarea {
+  border: 2px solid #3498db; /* Blue border */
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #fd7f00; /* Green border on focus */
+  background-color: #7be684; /* Light green background on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); /* Add focus shadow */
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

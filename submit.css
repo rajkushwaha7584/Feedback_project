@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow: hidden; /* Prevents scrolling of the entire page */
+}
+
+/* Container for animated message */
+.message-container {
+  background-color: rgba(164, 47, 47, 0.9); /* Semi-transparent background */
+  background-image: url(images/submit-back-image.jpg);
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image within the container */
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  max-width: 600px; /* Width limit */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-height: 80vh; /* Limits the height to 80% of the viewport height */
+  overflow-y: auto; /* Allows scrolling within the message container if content overflows */
+  position: relative;
+  animation: containerAnimation 5s ease-out forwards;
+  transition: background-color 0.5s ease-out backword;
+}
+
+/* Animation for container */
+@keyframes containerAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Countdown timer animation */
+@keyframes countdownAnimation {
+  0% {
+    transform: scale(1);
+    color: red;
+  }
+  25% {
+    transform: scale(1.2);
+    color: orange;
+  }
+  50% {
+    transform: scale(1.5);
+    color: yellow;
+  }
+  75% {
+    transform: scale(1.7);
+    color: green;
+  }
+  100% {
+    transform: scale(2);
+    color: blue;
+  }
+}
+
+#countdown {
+  font-size: 24px;
+  font-weight: bold;
+  animation: countdownAnimation 5s infinite;
+}
+
+/* Message Text Animation */
+.message-container p {
+  font-size: 18px;
+  color: rgb(
+    0,
+    0,
+    0
+  ); /* White color for text to contrast against the dark image */
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; /* Roboto font for better readability */
+  font-weight: 400;
+  position: relative;
+  opacity: 0; /* Start hidden */
+  animation: messageAnimation 5s ease-out forwards;
+  padding: 20px;
+}
+
+@keyframes messageAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) translateY(-100%);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateX(0) translateY(-100%);
+  }
+  50% {
+    opacity: 0.75;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+

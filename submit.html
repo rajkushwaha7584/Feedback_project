@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You Message</title>
+    <link rel="stylesheet" href="submit.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="message-container">
+      <p>
+        "Thank you so much for taking the time to share your thoughts with us!
+        Your feedback is incredibly valuable and helps us improve. We truly
+        appreciate your input and will do our best to incorporate your
+        suggestions. If there’s anything else you’d like to share, feel free to
+        reach out anytime. Have a great day!"
+      </p>
+
+      <!-- Show the user's message here -->
+      <div
+        id="userMessage"
+        style="font-size: 18px; color: white; margin-top: 20px">
+        <p><strong>Your Message:</strong></p>
+        <p id="messageContent"></p>
+        <!-- Display the message here -->
+      </div>
+
+      <!-- Redirection warning -->
+      <div
+        id="redirectMessage"
+        style="font-size: 16px; color: white; margin-top: 20px">
+        <p>
+          You will be redirected to the login page in
+          <span id="countdown">15</span> seconds...
+        </p>
+      </div>
+    </div>
+
+    <script src="submit.js"></script>
+  </body>
+</html>
